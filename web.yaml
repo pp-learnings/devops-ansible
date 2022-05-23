@@ -1,8 +1,8 @@
 ---
 - hosts: all
   tasks:
-    - name: install httpd
-      package: name=httpd state=latest
+    - name: install nginx 
+      package: name=nginx  state=latest
     - name: configure
       shell: "echo Welcome to Prakash  Server - zensar > /var/www/html/index.html"
     - name: start service
