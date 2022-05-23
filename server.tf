@@ -4,10 +4,10 @@ region = "us-east-1"
 resource "aws_instance" "myawsserver" {
   ami = "ami-0c4f7023847b90238"
   instance_type = "t2.micro"
-  key_name = "pp-zen-key"
+  key_name = "pp-ec2-key"
 
   tags = {
-    Name = "pp-devops-server"
+    Name = "pp-devops-server-2"
     env = "production"
     owner = "ppethe"
   }
