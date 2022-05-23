@@ -4,7 +4,7 @@
     - name: install nginx 
       package: name=nginx  state=latest
     - name: configure
-      shell: "echo Welcome to Prakash  Server - zensar > /var/www/html/index.html"
+      shell: "echo Welcome to Prakash  Server - zensar 12345 > /var/www/html/index.html"
     - name: start service
       service: name=nginx state=started
     - name: add user
