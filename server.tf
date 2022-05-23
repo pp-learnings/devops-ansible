@@ -2,12 +2,12 @@ provider "aws" {
 region = "us-east-1"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-0c4f7023847b90238"
+  ami = "ami-077e31c4939f6a2f3"
   instance_type = "t2.micro"
   key_name = "pp-ec2-key"
 
   tags = {
-    Name = "pp-devops-server-2"
+    Name = "pp-devops-server-3"
     env = "production"
     owner = "ppethe"
   }
