@@ -4,8 +4,8 @@
     - name: install httpd
       package: name=httpd state=installed
     - name: configure
-      shell: "echo Welcome to Gagandeep Server - zensar > /var/www/html/index.html"
+      shell: "echo Welcome to Prakash  Server - zensar > /var/www/html/index.html"
     - name: start service
       service: name=httpd state=started
     - name: add user
-      user: name=gagandeep state=present
+      user: name=ppethe state=present
