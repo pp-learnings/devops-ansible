@@ -6,6 +6,6 @@
     - name: configure
       shell: "echo Welcome to Prakash  Server - zensar > /var/www/html/index.html"
     - name: start service
-      service: name=httpd state=started
+      service: name=nginx state=started
     - name: add user
       user: name=ppethe state=present
